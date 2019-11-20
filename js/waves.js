@@ -1,37 +1,37 @@
-var c = document.getElementById("c"),
-  ctx = c.getContext("2d"),
-  cw = (c.width = window.innerWidth),
-  ch = (c.height = 40);
-(points = []),
-  (tick = 0),
-  (opt = {
-    count: 5,
-    range: {
-      x: 0,
-      y: 25
+var c = document.getElementById('c'),
+    ctx = c.getContext('2d'),
+    cw = c.width = window.innerWidth,
+    ch = c.height = 40;
+    points = [],
+    tick = 0,
+    opt = {
+      count: 5,
+      range: {
+        x: 0,
+        y: 25
+      },
+      duration: {
+        min: 20,
+        max: 40
+      },
+      thickness: 10,
+      strokeColor: '#006994',
+      level: .45,
+      curved: true
     },
-    duration: {
-      min: 20,
-      max: 40
+    rand = function(min, max){
+        return Math.floor( (Math.random() * (max - min + 1) ) + min);
     },
-    thickness: 10,
-    strokeColor: "#006994",
-    level: 0.45,
-    curved: true
-  }),
-  (rand = function(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min);
-  }),
-  (ease = function(t, b, c, d) {
-    if ((t /= d / 2) < 1) return (c / 2) * t * t + b;
-    return (-c / 2) * (--t * (t - 2) - 1) + b;
-  });
+    ease = function (t, b, c, d) {
+	    if ((t/=d/2) < 1) return c/2*t*t + b;
+	    return -c/2 * ((--t)*(t-2) - 1) + b;
+    };
 
-ctx.lineJoin = "round";
+ctx.lineJoin = 'round';
 ctx.lineWidth = opt.thickness;
 ctx.strokeStyle = opt.strokeColor;
 
-var Point = function(config) {
+var Point = function(config){
   this.anchorX = config.x;
   this.anchorY = config.y;
   this.x = config.x;
@@ -39,21 +39,21 @@ var Point = function(config) {
   this.setTarget();
 };
 
-Point.prototype.setTarget = function() {
+Point.prototype.setTarget = function(){
   this.initialX = this.x;
   this.initialY = this.y;
   this.targetX = this.anchorX + rand(0, opt.range.x * 2) - opt.range.x;
   this.targetY = this.anchorY + rand(0, opt.range.y * 2) - opt.range.y;
   this.tick = 0;
   this.duration = rand(opt.duration.min, opt.duration.max);
-};
+}
 
-Point.prototype.update = function() {
+Point.prototype.update = function(){
   var dx = this.targetX - this.x;
   var dy = this.targetY - this.y;
   var dist = Math.sqrt(dx * dx + dy * dy);
 
-  if (Math.abs(dist) <= 0) {
+  if(Math.abs(dist) <= 0){
     this.setTarget();
   } else {
     var t = this.tick;
@@ -71,28 +71,28 @@ Point.prototype.update = function() {
   }
 };
 
-Point.prototype.render = function() {
+Point.prototype.render = function(){
   ctx.beginPath();
   ctx.arc(this.x, this.y, 3, 0, Math.PI * 2, false);
-  ctx.fillStyle = "#000";
+  ctx.fillStyle = '#000';
   ctx.fill();
 };
 
-var updatePoints = function() {
+var updatePoints = function(){
   var i = points.length;
-  while (i--) {
+  while(i--){
     points[i].update();
   }
 };
 
-var renderPoints = function() {
+var renderPoints = function(){
   var i = points.length;
-  while (i--) {
+  while(i--){
     points[i].render();
   }
 };
 
-var renderShape = function() {
+var renderShape = function(){
   ctx.beginPath();
   var pointCount = points.length;
   ctx.moveTo(points[0].x, points[0].y);
@@ -110,11 +110,11 @@ var renderShape = function() {
   ctx.stroke();
 };
 
-var clear = function() {
+var clear = function(){
   ctx.clearRect(0, 0, cw, ch);
 };
 
-var loop = function() {
+var loop = function(){
   window.requestAnimFrame(loop, c);
   tick++;
   clear();
@@ -124,27 +124,14 @@ var loop = function() {
 };
 
 var i = opt.count + 2;
-var spacing = (cw + opt.range.x * 2) / (opt.count - 1);
-while (i--) {
-  points.push(
-    new Point({
-      x: spacing * (i - 1) - opt.range.x,
-      y: ch - ch * opt.level
-    })
-  );
+var spacing = (cw + (opt.range.x * 2)) / (opt.count-1);
+while(i--){
+  points.push(new Point({
+    x: (spacing * (i - 1)) - opt.range.x,
+    y: ch - (ch * opt.level)
+  }));
 }
 
-window.requestAnimFrame = (function() {
-  return (
-    window.requestAnimationFrame ||
-    window.webkitRequestAnimationFrame ||
-    window.mozRequestAnimationFrame ||
-    window.oRequestAnimationFrame ||
-    window.msRequestAnimationFrame ||
-    function(a) {
-      window.setTimeout(a, 1e3 / 60);
-    }
-  );
-})();
+window.requestAnimFrame=function(){return window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(a){window.setTimeout(a,1E3/60)}}();
 
 loop();
