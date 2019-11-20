@@ -1,41 +1,39 @@
 body {
   padding: 0;
   margin: 0;
-  color:#545454;
+  color: #545454;
 }
-
 
 /* navbar section */
 .navbar-nav a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #21564b;
 }
 
 .navbar-nav a:hover {
-  color: #66BFBF;
+  color: #66bfbf;
 }
 
 /* presentation section */
 #presentation {
-  background-color: #E4F9F5;
+  background-color: #e4f9f5;
   position: relative;
   padding: 2% 15% 0%;
-
 }
 
 #presentation h1 {
   margin: 3% auto 0 auto;
-  font-family: 'Sacramento', cursive;
+  font-family: "Sacramento", cursive;
   font-size: 5.625rem;
-  color: #66BFBF;
+  color: #66bfbf;
   line-height: 2;
   text-align: center;
 }
 
 #presentation h5 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
-  color: #66BFBF;
+  color: #66bfbf;
   font-weight: normal;
   padding-bottom: 5%;
   text-align: center;
@@ -55,7 +53,7 @@ body {
   bottom: 16em;
 }
 
-@media (max-width:1100px) {
+@media (max-width: 1100px) {
   #presentation .left-cloud {
     left: 4em;
     width: 112px;
@@ -71,7 +69,7 @@ body {
   }
 }
 
-@media (max-width:850px) {
+@media (max-width: 850px) {
   #presentation .mountain {
     width: 450px;
     height: 268px;
@@ -88,20 +86,16 @@ body {
   }
 }
 
-@media(max-width:992px)
-{
-  #presentation h1
-  {
+@media (max-width: 992px) {
+  #presentation h1 {
     font-size: 5.625em;
   }
-  #presentation h5
-  {
+  #presentation h5 {
     font-size: 2em;
   }
 }
-@media (max-width:691px) {
-  #presentation
-  {
+@media (max-width: 691px) {
+  #presentation {
     padding: 3% 1% 0%;
   }
   #presentation .mountain {
@@ -123,9 +117,9 @@ body {
     height: 34px;
   }
 
-   #presentation h1 {
+  #presentation h1 {
     font-size: 3em;
-    margin-top: 0.8em;;
+    margin-top: 0.8em;
   }
 
   #presentation h5 {
@@ -133,7 +127,7 @@ body {
   }
 }
 
-@media (max-width:571px) {
+@media (max-width: 571px) {
   #presentation .mountain {
     width: 253px;
     height: 150px;
@@ -152,518 +146,398 @@ body {
     width: 63px;
     height: 25px;
   }
-
 }
 
 /* Profile Section */
 
-#profile
-{
-  font-family: 'Montserrat', sans-serif;
+#profile {
+  font-family: "Montserrat", sans-serif;
   padding: 5% 15%;
   text-align: center;
   background-color: #085895;
 }
 
-#profile h1,h3
-{
+#profile h1,
+h3 {
   color: #45b29a;
-  font-family: 'Montserrat-Black', sans-serif;
+  font-family: "Montserrat-Black", sans-serif;
 }
 
-
-
-#profile img
-{
+#profile img {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
   border: 10px solid #006994;
 }
 
-#profile h1
-{
+#profile h1 {
   line-height: 2;
   font-weight: bold;
 }
 
-#profile h3,h5
-{
+#profile h3,
+h5 {
   line-height: 1.5;
 }
 
-#profile h5
-{
+#profile h5 {
   margin-bottom: 3rem;
-  color: #EDEDED;
-  font-family: 'Montserrat-Black', sans-serif;
+  color: #ededed;
+  font-family: "Montserrat-Black", sans-serif;
 }
 
-#profile hr
-{
+#profile hr {
   margin-bottom: 3rem;
 }
 
-#profile h3
-{
+#profile h3 {
   margin-bottom: 1rem;
 }
 
-#profile p
-{
+#profile p {
   line-height: 1.6;
   color: white;
 }
 
-#profile strong
-{
+#profile strong {
   line-height: 1.6;
-  font-family: 'Montserrat-Black', sans-serif;
+  font-family: "Montserrat-Black", sans-serif;
 }
 
-.about-container
-{
+.about-container {
   text-align: left;
 }
 
-
-
-@media(max-width:1150px)
-{
-  #profile
-  {
+@media (max-width: 1150px) {
+  #profile {
     padding: 3% 3%;
   }
-
 }
 
-@media(max-width:992px)
-{
-
-  #profile
-  {
+@media (max-width: 992px) {
+  #profile {
     padding: 8% 8%;
   }
 
-   #profile h1
-  {
+  #profile h1 {
     font-size: 4em;
   }
 
-  #profile h5
-  {
+  #profile h5 {
     font-size: 2.5em;
   }
 
-  #profile h3
-  {
+  #profile h3 {
     font-size: 2.5em;
   }
 
-  #profile p
-  {
+  #profile p {
     font-size: 1.5em;
   }
-
-
-
 }
 
-@media(max-width:700px)
-{
-  #profile
-  {
+@media (max-width: 700px) {
+  #profile {
     padding: 4% 4%;
   }
-   #profile h1
-  {
+  #profile h1 {
     font-size: 2em;
   }
 
-  #profile h5
-  {
+  #profile h5 {
     font-size: 1.1em;
   }
 
-  #profile h3
-  {
+  #profile h3 {
     font-size: 1.5em;
   }
 
-  #profile p
-  {
+  #profile p {
     font-size: 1em;
   }
 
-  #profile img
-  {
+  #profile img {
     width: 176px;
     height: 176px;
   }
-
-
-
 }
-
-
 
 /* experiences section */
 
-#experiences
-{
+#experiences {
   /* background-color: #e0ebe8; */
-  background-color: #EDEDED;
+  background-color: #ededed;
   padding: 7% 15%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-#experiences h1
-{
+#experiences h1 {
   text-align: center;
   color: #45b29a;
   line-height: 2;
   margin-bottom: 2rem;
   font-weight: bold;
-
 }
 
-#experiences h3
-{
-  font-weight:lighter;
+#experiences h3 {
+  font-weight: lighter;
   color: #45b29a;
   line-height: 1.5;
   margin: 2rem 0;
   font-size: 1.5rem;
 }
 
-#experiences h4
-{
-  font-weight:700;
+#experiences h4 {
+  font-weight: 700;
   line-height: 1.5;
   font-size: 1.1rem;
   color: black;
-  font-family: 'Montserrat-Black';
+  font-family: "Montserrat-Black";
 }
 
-.experience-period, .col-md-8 p
-{
+.experience-period,
+.col-md-8 p {
   font-size: 0.9rem;
   line-height: 1.6;
 }
 
-.marker
-{
+.marker {
   color: #45b29a;
   font-size: 0.9rem;
   padding-right: 1rem;
-
 }
 
-.experience
-{
+.experience {
   padding-bottom: 2rem;
 }
 
-@media(max-width:1000px)
-{
-  #experiences
-  {
-
+@media (max-width: 1000px) {
+  #experiences {
     padding: 8% 24% 0;
-
   }
 }
 
-@media(max-width:700px)
-{
-  #experiences .hidden-phone
-  {
+@media (max-width: 700px) {
+  #experiences .hidden-phone {
     display: none;
-
   }
 }
 
-
-
-@media(max-width:992px)
-{
-
-  #experiences
-  {
+@media (max-width: 992px) {
+  #experiences {
     padding: 8% 8%;
   }
 
-   #experiences h1
-  {
+  #experiences h1 {
     font-size: 4em;
   }
 
-  #experiences h3
-  {
+  #experiences h3 {
     font-size: 3em;
   }
 
-  #experiences p
-  {
+  #experiences p {
     font-size: 1.5em;
   }
 
-  #experiences h4
-  {
+  #experiences h4 {
     font-size: 2em;
   }
 
-  #experiences i
-  {
+  #experiences i {
     font-size: 1em;
   }
-
-
 }
 
-@media(max-width:767px)
-{
-
-  #experiences
-  {
+@media (max-width: 767px) {
+  #experiences {
     padding: 3% 3%;
   }
 
-   #experiences h1
-  {
+  #experiences h1 {
     font-size: 2em;
   }
 
-  #experiences h3
-  {
+  #experiences h3 {
     font-size: 1.25em;
   }
 
-  #experiences p
-  {
+  #experiences p {
     font-size: 0.9em;
   }
 
-  #experiences h4
-  {
+  #experiences h4 {
     font-size: 1.25em;
   }
 
-  #experiences i
-  {
+  #experiences i {
     font-size: 0.6em;
   }
-
-
 }
 
 /* Section Habilities */
 
-#habilities
-{
+#habilities {
   background-color: #fefefe;
   padding: 5% 15% 0;
-  font-family: 'Montserrat';
-
+  font-family: "Montserrat";
 }
 
-#habilities .row
-{
+#habilities .row {
   padding: 5%;
   text-align: center;
 }
 
-.img-h
-{
+.img-h {
   width: 192px;
   height: 192px;
 }
 
-#habilities h1
-{
+#habilities h1 {
   text-align: center;
   color: #45b29a;
   line-height: 2;
   margin-bottom: 2rem;
   font-weight: bold;
-  font-family: 'Montserrat';
-
+  font-family: "Montserrat";
 }
 
-#habilities h3
-{
+#habilities h3 {
   margin: 2rem 0;
 }
 
-#habilities p
-{
+#habilities p {
   line-height: 1.6;
 }
 
-@media(max-width:992px)
-{
-  #habilities
-  {
+@media (max-width: 992px) {
+  #habilities {
     padding: 5% 5%;
   }
-  .img-h
-  {
-
+  .img-h {
     margin-top: 3.5em;
   }
-   #habilities h3
-  {
+  #habilities h3 {
     font-size: 2.6em;
   }
-  #habilities p
-  {
+  #habilities p {
     font-size: 1.8em;
   }
-  #habilities h1
-  {
+  #habilities h1 {
     font-size: 5em;
   }
 }
 
-@media(max-width:700px)
-{
-  #habilities
-  {
+@media (max-width: 700px) {
+  #habilities {
     padding: 1% 2%;
   }
-  .img-h
-  {
-    width:78px;
-    height:78px;
+  .img-h {
+    width: 78px;
+    height: 78px;
     margin-top: 7em;
   }
-     #habilities h1
-    {
-      font-size: 2em;
-    }
-  #habilities h3
-  {
+  #habilities h1 {
+    font-size: 2em;
+  }
+  #habilities h3 {
     font-size: 1.25em;
   }
-  #habilities p
-  {
+  #habilities p {
     font-size: 0.9em;
   }
-
 }
 
 /* portifolio Section */
 
-#portifolio
-{
-   background-color: #e0ebe8;
-  font-family: 'Montserrat';
+#portifolio {
+  background-color: #e0ebe8;
+  font-family: "Montserrat";
   padding: 3% 15% 5%;
 }
 
-#portifolio h1
-{
+#portifolio h1 {
   text-align: center;
   color: #45b29a;
   line-height: 2;
-  padding-bottom:4rem;
+  padding-bottom: 4rem;
   font-weight: bold;
 }
 
-#portifolio a
-{
-  color:#45b29a;
+#portifolio a {
+  color: #45b29a;
 }
 
-.card-text
-{
+.card-text {
   line-height: 1.6;
   text-align: justify;
 }
 
-.download-button
-{
+.download-button {
   margin: 0 auto;
 }
 
-@media(max-width:992px)
-{
-  #portifolio
-  {
+@media (max-width: 992px) {
+  #portifolio {
     padding: 8% 8%;
   }
 
-   #portifolio h3
-  {
+  #portifolio h3 {
     font-size: 2.6em;
   }
-  #portifolio p
-  {
+  #portifolio p {
     font-size: 1.8em;
   }
-  #portifolio h1
-  {
+  #portifolio h1 {
     font-size: 4em;
   }
 
-  #portifolio a
-  {
+  #portifolio a {
     font-size: 2em;
   }
 }
 
-@media(max-width:700px)
-{
-  #portifolio
-  {
+@media (max-width: 700px) {
+  #portifolio {
     padding: 5% 5%;
   }
 
-     #portifolio h1
-    {
-      font-size: 2em;
-    }
-  #portifolio h3
-  {
+  #portifolio h1 {
+    font-size: 2em;
+  }
+  #portifolio h3 {
     font-size: 1.6rem;
   }
-  #portifolio p
-  {
+  #portifolio p {
     font-size: 0.9rem;
   }
 
-  #portifolio a
-  {
+  #portifolio a {
     font-size: 1.2em;
   }
 }
 
-
 /* roda Section */
 
-#rodape
-{
+#rodape {
   padding: 4% 8%;
   text-align: center;
-  background-color: #FDFDFD;
-  font-family: 'Montserrat';
+  background-color: #fdfdfd;
+  font-family: "Montserrat";
 }
 
-#rodape .contact
-{
+#rodape .contact {
   text-decoration: none;
   color: white;
 }
 
-#rodape button
-{
-  margin-bottom:  2rem;
+#rodape button {
+  margin-bottom: 2rem;
 }
 
-#rodape a
-{
+#rodape a {
   text-decoration: none;
-  color:#45b29a;
+  color: #45b29a;
   font-size: 0.8rem;
   padding-right: 10px;
 }
@@ -675,62 +549,48 @@ canvas {
   left: 0;
 }
 
-@media(max-width:992px)
-{
-  #rodape
-  {
+@media (max-width: 992px) {
+  #rodape {
     padding: 8% 8%;
   }
 
-   #rodape h3
-  {
+  #rodape h3 {
     font-size: 2.6rem;
   }
-  #rodape p
-  {
+  #rodape p {
     font-size: 1.8rem;
   }
-  #rodape h1
-  {
+  #rodape h1 {
     font-size: 4rem;
   }
 
-  #rodape a
-  {
+  #rodape a {
     font-size: 1.8rem;
   }
-  #rodape i
-  {
+  #rodape i {
     font-size: 2.1rem;
   }
 }
 
-@media(max-width:700px)
-{
-  #rodape
-  {
+@media (max-width: 700px) {
+  #rodape {
     padding: 5% 5%;
   }
 
-   #rodape h1
-    {
-      font-size: 2em;
-    }
-  #rodape h3
-  {
+  #rodape h1 {
+    font-size: 2em;
+  }
+  #rodape h3 {
     font-size: 1.6em;
   }
-  #rodape p
-  {
+  #rodape p {
     font-size: 0.9em;
   }
 
-  #rodape a
-  {
+  #rodape a {
     font-size: 0.9em;
   }
-  #rodape i
-  {
+  #rodape i {
     font-size: 1em;
   }
 }
