@@ -73,8 +73,8 @@
           </div>
         </nav>
       </div>
-      <h1>Thallys Braz</h1>
-      <h5>Currículo Interativo</h5>
+      <h1 class="name">Thallys Braz</h1>
+      
       <img class="cloud left-cloud" src="images/cloud.png" alt="cloud" />
       <img
         class="rounded mx-auto d-block mountain"
@@ -225,7 +225,7 @@
           <h3>Fron-End Web</h3>
           <p>
             Desenvolvimento Web utilizando tecnlogias front-end HTML, CSS,
-            Bootstrap 4, Javascipt e JQuery, WebPack e SAP UI5
+            Bootstrap 4, Javascipt, JQuery, WebPack e SAP UI5
           </p>
         </div>
         <div class="col">
@@ -239,8 +239,8 @@
         <div class="col">
           <h3>Back-End</h3>
           <p>
-            Desenvolvimento Web utilizando tecnlogias front-end HTML, CSS,
-            Bootstrap 4, Javascipt e JQuery, WebPack e SAP UI5
+            Desenvolvimento Web utilizando tecnlogias back-end JavaScript, Python,
+            Java e PHP.
           </p>
         </div>
       </div>
@@ -356,6 +356,20 @@
         >Responsive icon by Icons8</a
       >
     </section>
+
+    <script>
+      function TypeWriter(elemento) {
+        const textoArray = elemento.innerHTML.split("");
+        elemento.innerHTML = "";
+        textoArray.forEach((letra, i) => {
+          setTimeout(() => {
+            elemento.innerHTML += letra;
+          }, 150 * i);
+        });
+      }
+
+      TypeWriter(document.querySelector(".name"));
+    </script>
 
     <script src="js/waves.js" charset="utf-8"></script>
   </body>
